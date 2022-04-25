@@ -28,10 +28,10 @@ now your clash directory would look like this:
 finally, configure your subscriptons in the `yacd_start.py`: 
 
 ```py
-18    questions = [List("clash_subscription", message="Which database? ", choices=[
-19                      "cordCloud", "speeder"]), # change the subscriptions to your own ones
-20                 Text('clash_directory',
-21                      message="Clash directory? ", default="/home/ryland/Documents/clash")]  # change your directory to your own
+17    questions = [List("clash_subscription", message="Which database? ", choices=[
+18                      "cordCloud", "speeder"]), # change the subscriptions to your own ones
+19                 Text('clash_directory',
+20                      message="Clash directory? ", default="/home/ryland/Documents/clash")]  # change your directory to your own
 ```
 
 Now you can run script with: 
