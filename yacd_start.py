@@ -1,7 +1,6 @@
-# To add a new cell, type '# %%'
-# To add a new markdown cell, type '# %% [markdown]'
-# %%
-# from tkinter import EW
+
+from IPython import get_ipython
+get_ipython().system('pip3 install pyyaml requests yaml')
 
 # %%
 import subprocess
@@ -38,8 +37,3 @@ print('Killing yacd panel process previously started ...')
 subprocess.run(["sudo kill -9 $(sudo netstat -nlp | grep 3000 | awk '{print $7}' | awk -F'/' '{print $1}') "], shell=True, stderr=open("/dev/null", 'w'))
 subprocess.run(['nohup yarn start --host > /dev/null 2>&1 &'], shell=True)
 print("\nSuccess!")
-
-# %%
-
-
-# %%
